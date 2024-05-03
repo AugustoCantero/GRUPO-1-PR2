@@ -1,0 +1,201 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>848</x><y>352</y><w>328</w><h>208</h></coordinates><panel_attributes>ProductoCompuesto
+
+-
+- precio: float
+- descripcion: String
+- descuento: float 
+
+-
+
++Mc_Chombo(String, float, Hamburguesa, Bebida, Acompaniamiento)
+-precioFinalCombo ( )
++mostrarDatos ( ):String
++ add (producto)
++ remove (producto)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>208</x><y>568</y><w>168</w><h>168</h></coordinates><panel_attributes>Bebida
+
+-
+- precio:  float
+- descripcion: String
+- stockDisponible: int
+- tipoBebida: enum
+
+-
+
++Bebida ( )
+-setPrecio ( )
++getPrecio ( )
++mostrarDatos ( ):String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>416</x><y>568</y><w>168</w><h>168</h></coordinates><panel_attributes>Hamburguesa
+
+-
+- precio:  float
+- descripcion: String
+- stockDisponible: int
+- tipoHamburguesa: enum
+
+-
+
++Hamburgusa ( )
+-setPrecio ( )
++getPrecio ( )
++mostrarDatos ( ):String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>632</x><y>568</y><w>168</w><h>168</h></coordinates><panel_attributes>Acompaniamiento
+
+-
+- precio:  float
+- descripcion: String
+- stockDisponible: int
+- tipoAcompaniamiento: enum
+
+--
+
++Acompaniamiento ( )
+-setPrecio ( )
++getPrecio ( )
++mostrarDatos ( ):String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>648</x><y>96</y><w>168</w><h>56</h></coordinates><panel_attributes>&lt;&lt;Interfaz&gt;&gt;
+Imprimible
+-
++imprimir():void
+
+-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>432</x><y>88</y><w>168</w><h>152</h></coordinates><panel_attributes>Factura
+
+-
+-fechaYHora: dateTime
+-iDFactura:int
+-listaItems(items)
+-
+
++Factura()
++addProducto():</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>416</x><y>312</y><w>184</w><h>152</h></coordinates><panel_attributes>ProductoIndividual
+
+-
+- precio:  float
+- descripcion: String
+
+-
++Producto ( )
+-setPrecio ( )
++getPrecio ( )
++mostrarDatos ( ):String
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>496</x><y>456</y><w>232</w><h>128</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80;270;80;270;140</additional_attributes></element><element><id>Relation</id><coordinates><x>496</x><y>456</y><w>24</w><h>128</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>456</y><w>240</w><h>128</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>280;10;280;80;10;80;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>592</x><y>440</y><w>272</w><h>24</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;320;10</additional_attributes></element><element><id>Relation</id><coordinates><x>592</x><y>128</y><w>72</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>70;11;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>392</x><y>192</y><w>56</w><h>24</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;50;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>648</x><y>184</y><w>168</w><h>56</h></coordinates><panel_attributes>&lt;&lt;Interfaz&gt;&gt;
+Mostrable
+-
++mostrarDatos ( ):String
+
+-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>232</y><w>24</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>496</x><y>456</y><w>232</w><h>128</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80;270;80;270;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>632</x><y>784</y><w>168</w><h>96</h></coordinates><panel_attributes>&lt;&lt;enums&gt;&gt;
+tipoAcompaniamiento
+
+-
+_+ PAPAS_
+_+ ENSALADA_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>704</x><y>728</y><w>24</w><h>72</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>488</x><y>728</y><w>24</w><h>72</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>728</y><w>24</w><h>72</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>208</x><y>784</y><w>168</w><h>96</h></coordinates><panel_attributes>&lt;&lt;enums&gt;&gt;
+tipoBebida
+
+-
+_+ TEDETILO_
+_+ AGUASINGAS_
+_+ GASEOSA_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>416</x><y>784</y><w>168</w><h>96</h></coordinates><panel_attributes>&lt;&lt;enums&gt;&gt;
+tipoHamburguesa
+
+-
+_+ HAMBURGUESA_
+_+ HAMBURGUESAC/QUESO_
+_+POLLO_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>648</x><y>272</y><w>168</w><h>152</h></coordinates><panel_attributes>&lt;&lt;Interfaz&gt;&gt;
+Producto
+-
+-precio: float
+-descripcion: String
+
+-
+
++getPrecio ( )
+-setPrecio ( )
++getDescripcion ( )
+-setDescripcion( )
++mostrarDatos ( )</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>808</x><y>368</y><w>56</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;50;10</additional_attributes></element><element><id>Relation</id><coordinates><x>592</x><y>360</y><w>72</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>736</x><y>416</y><w>128</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>140;120;10;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>232</x><y>160</y><w>168</w><h>152</h></coordinates><panel_attributes>Item
+
+-
+-producto: Producto
+-cantidad: int
+- precioTotal: float
+
+-
+
++Item()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>392</x><y>280</y><w>272</w><h>24</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>320;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>592</x><y>208</y><w>72</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1136</x><y>112</y><w>168</w><h>152</h></coordinates><panel_attributes>SuperProducto
+-
+- precio: float
+- descripcion: String
+- descuento: float 
+- productoCompuestos
+
+-
++SuperProducto(float,String, float )
+-precioFinalCombo ( )
++mostrarDatos ( ):String
++ add (productoCompuesto)
++ remove (productoCompuesto)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1000</x><y>200</y><w>152</w><h>168</h></coordinates><panel_attributes>lt=&lt;-
+- productosCompuestos
+m1=2..*</panel_attributes><additional_attributes>10;190;10;10;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>808</x><y>144</y><w>344</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;170;130;170;130;10;410;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1296</x><y>392</y><w>168</w><h>200</h></coordinates><panel_attributes>SuperRequeteProducto
+-
+- precio: float
+- descripcion: String
+- descuento: float 
+- productoCompuestos
+- superProducto
+
+-
++SuperProducto(float,String, float )
+-precioFinalCombo ( )
++mostrarDatos ( ):String
++ add (productoCompuesto)
++ remove (productoCompuesto)
++ add (superProducto)
++ remove (superProducto)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1232</x><y>256</y><w>152</w><h>152</h></coordinates><panel_attributes>lt=&lt;-
+      - superProductos
+m1=1..*</panel_attributes><additional_attributes>20;10;20;120;170;120;170;170</additional_attributes></element><element><id>Relation</id><coordinates><x>1168</x><y>448</y><w>144</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+  - productoCompuestos
+m1=1..*</panel_attributes><additional_attributes>10;20;160;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>8</x><y>568</y><w>168</w><h>168</h></coordinates><panel_attributes>ProductoPromocional
+
+-
+- precio:  float
+- descripcion: String
+- stockDisponible: int
+- tipoItemPromo: enum
+
+-
+
++ProductoPromocional( )
+-setPrecio ( )
++getPrecio ( )
++mostrarDatos ( ):String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>456</y><w>440</w><h>128</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>530;10;530;80;10;80;10;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>784</y><w>168</w><h>96</h></coordinates><panel_attributes>&lt;&lt;enums&gt;&gt;
+tipoItemPromo
+
+-
+_+ REMERA_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>728</y><w>24</w><h>72</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1320</x><y>0</y><w>240</w><h>128</h></coordinates><panel_attributes>SuperProductoPromocion
+-
+- productoPromocional
+
+-
++SuperProducto(super, productoPromocional)
+-precioFinalCombo ( )
++mostrarDatos ( ):String
++ add (productoPromocional)
++ remove (productoPromocional)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1208</x><y>40</y><w>128</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;90;10;10;140;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1016</x><y>648</y><w>168</w><h>168</h></coordinates><panel_attributes>&lt;&lt;Interfaz&gt;&gt;
+IStrategy
+-
+
+
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
